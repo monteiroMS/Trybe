@@ -21,7 +21,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 3: Introdução - HTML & CSS
 
-- [ ] 3-1: _HTML & CSS - Estruturas de pÃ¡gina_
+- [ ] 3-1: _HTML & CSS - Estruturas de página_
 - [ ] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [ ] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [ ] 3-4: _HTML Semântico_
@@ -118,7 +118,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 16: Introdução ao Redux
 
-- [ ] 16-1: _IntroduÃ§Ã£o ao Redux_
+- [ ] 16-1: _Introdução ao Redux_
 - [ ] 16-2: _React com Redux - Parte 1_
 - [ ] 16-3: _React com Redux - Prática_
 - [ ] 16-4: _React com Redux - Parte 2_
