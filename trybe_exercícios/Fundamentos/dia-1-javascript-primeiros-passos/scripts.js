@@ -37,7 +37,7 @@
 //    console.log(c);
 // }
 
-const number = 0;
+/* const number = 0;
 
 if (number > 0) {
     console.log("Positive");
@@ -45,4 +45,10 @@ if (number > 0) {
     console.log("Negative");
 } else {
     console.log("Zero");
-}
+} */
+
+const um = 60;
+const dois = 60;
+const tres = 60;
+
+console.log(um + dois + tres === 180);
