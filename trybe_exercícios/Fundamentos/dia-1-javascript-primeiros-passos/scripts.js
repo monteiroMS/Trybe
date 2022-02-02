@@ -47,7 +47,7 @@ if (number > 0) {
     console.log("Zero");
 } */
 
-const um = 62;
+/* const um = 62;
 const dois = 60;
 const tres = 60;
 const somaDosAngulos = um + dois + tres;
@@ -58,6 +58,5 @@ if (um > 0 && dois > 0 && tres > 0 && somaDosAngulos === 180) {
     console.log(false);
 } else {
     console.log("ERRO");
-}
+} */
 
-// ok
