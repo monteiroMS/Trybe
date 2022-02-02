@@ -16,11 +16,23 @@
 // módulo
 // console.log(a % b);
 
-const a = 35;
-const b = 108;
+// const a = 35;
+// const b = 108;
 
-if (a > b) {
-    console.log(a);
+// if (a > b) {
+//    console.log(a);
+// } else {
+//    console.log(b);
+// }
+
+const a = 1002;
+const b = 895;
+const c = 890;
+
+if (a > b && a > c) {
+   console.log(a);
+} else if (b > a && b > c) {
+   console.log(b);
 } else {
-    console.log(b);
+    console.log(c);
 }
