@@ -59,3 +59,5 @@ if (um > 0 && dois > 0 && tres > 0 && somaDosAngulos === 180) {
 } else {
     console.log("ERRO");
 }
+
+// ok
