@@ -1,3 +1,5 @@
+// 1
+
 // const a = 5;
 // const b = 10;
 
@@ -16,6 +18,8 @@
 // módulo
 // console.log(a % b);
 
+// 2
+
 // const a = 35;
 // const b = 108;
 
@@ -24,6 +28,8 @@
 // } else {
 //    console.log(b);
 // }
+
+// 3
 
 // const a = 1002;
 // const b = 895;
@@ -37,6 +43,8 @@
 //    console.log(c);
 // }
 
+// 4
+
 /* const number = 0;
 
 if (number > 0) {
@@ -46,6 +54,8 @@ if (number > 0) {
 } else {
     console.log("Zero");
 } */
+
+// 5
 
 /* const um = 62;
 const dois = 60;
@@ -60,3 +70,37 @@ if (um > 0 && dois > 0 && tres > 0 && somaDosAngulos === 180) {
     console.log("ERRO");
 } */
 
+// 6
+
+let peça = "Bispo";
+let peças = peça.toLowerCase();
+
+switch (peças) {
+
+    case "torre":
+    console.log("Move para frente, trás, direita e esquerda, quantas casas forem possíveis");
+    break
+    
+    case "cavalo":
+        console.log("Apenas movimentos em L de três casas, para a direção que for possível");
+    break
+
+    case "bispo":
+        console.log("Apenas nas diagonais, quantas casas forem possíveis, respeitando a cor da casa incial");
+    break
+
+    case "rainha":
+        console.log("Quaisquer direções possíveis, quantas casas forem possíveis");
+    break
+
+    case "rei":
+        console.log("Quaisquer direções possíveis, apenas uma casa");
+    break
+    
+    case "peão":
+        console.log("Apenas para frente, apenas uma casa. Mata necessariamente na diagonal");
+    break
+
+    default:
+        console.log("Isso não é uma peça de xadrez");
+}
