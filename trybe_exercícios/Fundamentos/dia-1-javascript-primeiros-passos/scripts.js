@@ -72,35 +72,56 @@ if (um > 0 && dois > 0 && tres > 0 && somaDosAngulos === 180) {
 
 // 6
 
-let peça = "Bispo";
-let peças = peça.toLowerCase();
+// let peça = "Bispo";
+// let peças = peça.toLowerCase();
 
-switch (peças) {
+// switch (peças) {
 
-    case "torre":
-    console.log("Move para frente, trás, direita e esquerda, quantas casas forem possíveis");
-    break
+//     case "torre":
+//     console.log("Move para frente, trás, direita e esquerda, quantas casas forem possíveis");
+//     break
     
-    case "cavalo":
-        console.log("Apenas movimentos em L de três casas, para a direção que for possível");
-    break
+//     case "cavalo":
+//         console.log("Apenas movimentos em L de três casas, para a direção que for possível");
+//     break
 
-    case "bispo":
-        console.log("Apenas nas diagonais, quantas casas forem possíveis, respeitando a cor da casa incial");
-    break
+//     case "bispo":
+//         console.log("Apenas nas diagonais, quantas casas forem possíveis, respeitando a cor da casa incial");
+//     break
 
-    case "rainha":
-        console.log("Quaisquer direções possíveis, quantas casas forem possíveis");
-    break
+//     case "rainha":
+//         console.log("Quaisquer direções possíveis, quantas casas forem possíveis");
+//     break
 
-    case "rei":
-        console.log("Quaisquer direções possíveis, apenas uma casa");
-    break
+//     case "rei":
+//         console.log("Quaisquer direções possíveis, apenas uma casa");
+//     break
     
-    case "peão":
-        console.log("Apenas para frente, apenas uma casa. Mata necessariamente na diagonal");
-    break
+//     case "peão":
+//         console.log("Apenas para frente, apenas uma casa. Mata necessariamente na diagonal");
+//     break
 
-    default:
-        console.log("Isso não é uma peça de xadrez");
+//     default:
+//         console.log("Isso não é uma peça de xadrez");
+// }
+
+// 7
+
+let nota = 0.85;
+let notaPorcentagem = nota * 100;
+
+if (notaPorcentagem < 0 || notaPorcentagem > 100) {
+    console.log("ERROR");
+}else if (notaPorcentagem >= 90) {
+    console.log("A");
+} else if (notaPorcentagem < 90 && notaPorcentagem >= 80) {
+    console.log("B");
+} else if (notaPorcentagem < 80 && notaPorcentagem >= 70) {
+    console.log("C");
+} else if (notaPorcentagem < 70 && notaPorcentagem >= 60) {
+    console.log("D");
+} else if (notaPorcentagem < 60 && notaPorcentagem >= 50) {
+    console.log("E");
+} else if (notaPorcentagem < 50) {
+    console.log("F");
 }
