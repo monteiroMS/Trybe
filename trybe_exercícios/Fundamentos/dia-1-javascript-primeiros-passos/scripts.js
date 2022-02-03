@@ -144,16 +144,34 @@ if (um > 0 && dois > 0 && tres > 0 && somaDosAngulos === 180) {
 
 // 9
 
-const um = (Math.floor(Math.random() * 10 + 1));
-const dois = (Math.floor(Math.random() * 10 + 1));
-const tres = (Math.floor(Math.random() * 10 + 1));
+// const um = (Math.floor(Math.random() * 10 + 1));
+// const dois = (Math.floor(Math.random() * 10 + 1));
+// const tres = (Math.floor(Math.random() * 10 + 1));
 
-if (um % 2 !== 0 || dois % 2 !== 0 || tres % 2 !== 0) {
-    console.log(true);
+// if (um % 2 !== 0 || dois % 2 !== 0 || tres % 2 !== 0) {
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
+
+// console.log(um);
+// console.log(dois);
+// console.log(tres);
+
+// 10
+
+const custo = 10;
+const venda = 20;
+let numeroVendas = 1000;
+let imposto = 0.20 * custo;
+let custoTotal = custo + imposto;
+let lucro = venda - custoTotal;
+
+if (custo < 0 || venda < 0) {
+    console.log("ERRO - VALOR INVÁLIDO");
 } else {
-    console.log(false);
+    console.log(lucro * numeroVendas);
 }
 
-console.log(um);
-console.log(dois);
-console.log(tres);
+console.log(imposto);
+console.log(custoTotal);
