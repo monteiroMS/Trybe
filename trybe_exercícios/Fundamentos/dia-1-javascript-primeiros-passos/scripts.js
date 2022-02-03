@@ -128,11 +128,27 @@ if (um > 0 && dois > 0 && tres > 0 && somaDosAngulos === 180) {
 
 // 8
 
+// const um = (Math.floor(Math.random() * 10 + 1));
+// const dois = (Math.floor(Math.random() * 10 + 1));
+// const tres = (Math.floor(Math.random() * 10 + 1));
+
+// if (um % 2 === 0 || dois % 2 === 0 || tres % 2 === 0) {
+//     console.log(true);
+// } else {
+//     console.log(false);
+// }
+
+// console.log(um);
+// console.log(dois);
+// console.log(tres);
+
+// 9
+
 const um = (Math.floor(Math.random() * 10 + 1));
 const dois = (Math.floor(Math.random() * 10 + 1));
 const tres = (Math.floor(Math.random() * 10 + 1));
 
-if (um % 2 === 0 || dois % 2 === 0 || tres % 2 === 0) {
+if (um % 2 !== 0 || dois % 2 !== 0 || tres % 2 !== 0) {
     console.log(true);
 } else {
     console.log(false);
