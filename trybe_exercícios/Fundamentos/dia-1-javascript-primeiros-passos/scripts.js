@@ -107,21 +107,33 @@ if (um > 0 && dois > 0 && tres > 0 && somaDosAngulos === 180) {
 
 // 7
 
-let nota = 0.85;
-let notaPorcentagem = nota * 100;
+// let nota = 0.85;
+// let notaPorcentagem = nota * 100;
 
-if (notaPorcentagem < 0 || notaPorcentagem > 100) {
-    console.log("ERROR");
-}else if (notaPorcentagem >= 90) {
-    console.log("A");
-} else if (notaPorcentagem < 90 && notaPorcentagem >= 80) {
-    console.log("B");
-} else if (notaPorcentagem < 80 && notaPorcentagem >= 70) {
-    console.log("C");
-} else if (notaPorcentagem < 70 && notaPorcentagem >= 60) {
-    console.log("D");
-} else if (notaPorcentagem < 60 && notaPorcentagem >= 50) {
-    console.log("E");
-} else if (notaPorcentagem < 50) {
-    console.log("F");
+// if (notaPorcentagem < 0 || notaPorcentagem > 100) {
+//     console.log("ERROR");
+// }else if (notaPorcentagem >= 90) {
+//     console.log("A");
+// } else if (notaPorcentagem < 90 && notaPorcentagem >= 80) {
+//     console.log("B");
+// } else if (notaPorcentagem < 80 && notaPorcentagem >= 70) {
+//     console.log("C");
+// } else if (notaPorcentagem < 70 && notaPorcentagem >= 60) {
+//     console.log("D");
+// } else if (notaPorcentagem < 60 && notaPorcentagem >= 50) {
+//     console.log("E");
+// } else if (notaPorcentagem < 50) {
+//     console.log("F");
+// }
+
+// 8
+
+const um = 5;
+const dois = 15;
+const tres = 25;
+
+if (um % 2 === 0 || dois % 2 === 0 || tres % 2 === 0) {
+    console.log(true);
+} else {
+    console.log(false);
 }
