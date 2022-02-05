@@ -85,11 +85,24 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // EXERCÍCIO 8
 
+// let numeros = [];
+
+// for(index = 1; index <= 25; index += 1) {
+//     numeros.push(index);
+// }
+
+// console.log(numeros);
+
+// EXERCÍCIO 9
+
 let numeros = [];
 
 for(index = 1; index <= 25; index += 1) {
     numeros.push(index);
 }
 
-console.log(numeros);
+for(index = 0; index < numeros.length; index += 1) {
+    console.log(numeros[index] / 2);
+}
+
 
