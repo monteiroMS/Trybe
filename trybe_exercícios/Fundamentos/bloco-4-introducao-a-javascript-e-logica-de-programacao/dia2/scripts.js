@@ -57,16 +57,28 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // exercicio 6
 
-let impar = 0;
+// let impar = 0;
+
+// for(index = 0; index < numbers.length; index += 1) {
+//     if (numbers[index] % 2 !== 0) {
+//         impar += + 1;
+//     }
+// }
+
+// console.log(impar);
+
+// if (impar === 0) {
+//     console.log("Nenhum valor ímpar encontrado!");
+// }
+
+// exercicio 7
+
+let menor = numbers[0];
 
 for(index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 2 !== 0) {
-        impar += + 1;
+    if (numbers[index] < menor) {
+        menor = numbers[index];
     }
 }
 
-console.log(impar);
-
-if (impar === 0) {
-    console.log("Nenhum valor ímpar encontrado!");
-}
+console.log(menor);
