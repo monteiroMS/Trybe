@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // EXERCÍCIO 1
 
@@ -57,19 +57,19 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // EXERCÍCIO 6
 
-let impar = 0;
+// let impar = 0;
 
-for(index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 2 !== 0) {
-        impar += 1;
-    }
-}
+// for(index = 0; index < numbers.length; index += 1) {
+//     if (numbers[index] % 2 !== 0) {
+//         impar += 1;
+//     }
+// }
 
-console.log(impar);
+// console.log(impar);
 
-if (impar === 0) {
-    console.log("Nenhum valor ímpar encontrado!");
-}
+// if (impar === 0) {
+//     console.log("Nenhum valor ímpar encontrado!");
+// }
 
 // EXERCÍCIO 7
 
@@ -106,3 +106,47 @@ if (impar === 0) {
 // }
 
 
+// ORDENADOR CRESCENTE
+
+// for (let index = 1; index < numbers.length; index += 1) {
+//     for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//       if (numbers[index] < numbers[secondIndex]) {
+//         let position = numbers[index];
+//         numbers[index] = numbers[secondIndex];
+//         numbers[secondIndex] = position;
+//       }
+//     }
+//   }
+
+// console.log(numbers);
+
+// ORDENADOR DECRESCENTE
+
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// for (let index = 1; index < numbers.length; index += 1) {
+//     for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+//       if (numbers[index] > numbers[secondIndex]) {
+//         let position = numbers[index];
+//         numbers[index] = numbers[secondIndex];
+//         numbers[secondIndex] = position;
+//       }
+//     }
+//   }
+
+// console.log(numbers);
+
+// CRIAR NOVO ARRAY MULTIPLICANDO O ANTERIOR
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let newNumbers = [];
+
+for(index = 0; index < numbers.length; index += 1) {
+    if (index <= numbers.length - 2) {
+        newNumbers.push(numbers[index] * numbers[index + 1]);
+    } else {
+        newNumbers.push(numbers[index] * 2);
+    }
+}
+
+console.log(newNumbers);
