@@ -29,10 +29,13 @@
 // console.log(array);
 
 // EXERCÍCIO 3
-// Realizado a partir da leitura da página https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/length && https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max && https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 
+// Realizado a partir da leitura da página https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/length 
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max 
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 // Para entender o por quê de se usar "...", li o artigo https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 
+// retorna a maior palavra
 
 let array = ['java', 'javascript', 'python', 'html', 'css'];
 let arraySizes = [];
@@ -44,3 +47,15 @@ for(index = 0; index < array.length; index += 1) {
 maiorDoArray = Math.max(...arraySizes);
 let biggerWord = arraySizes.indexOf(maiorDoArray);
 console.log("A maior palavra é " + array[biggerWord] + "!!!");
+
+// retorna a menor palavra
+
+let arraySizes2 = [];
+
+for(index = 0; index < array.length; index += 1) {
+    arraySizes2.push(array[index].length);
+}
+
+menorDoArray = Math.min(...arraySizes2);
+let smallestWord = arraySizes2.indexOf(menorDoArray);
+console.log("A menor palavra é " + array[smallestWord] + "!!!");
