@@ -117,6 +117,6 @@ for(index = 0; index < numeros.length; index += 1) {
 
 console.log(numeros);
 
-// cheguei no final da lista de checagem dos primos e terminei de tirar todos os não primos da lista. Agora preciso chegar qual o maior dessa lista
+// cheguei no final da lista de checagem dos primos e terminei de tirar todos os não primos da lista. Agora preciso checar qual o maior dessa lista
 
 console.log("O maior número primo entre 0 e 50 é " + Math.max(...numeros));
