@@ -123,8 +123,10 @@
 
 // BONUS
 
-let n = 5;
-let line = [];
+// parte 1
+
+// let n = 5;
+// let line = [];
 
 // for(let index = 1; index <= 5; index += 1) {
 //     line.push('*');
@@ -133,8 +135,30 @@ let line = [];
 //     console.log(line);
 // }
 
+// parte 2
+
+// let n = 5;
+// let line = [];
+
+// for(let index = 1; index <= 5; index += 1) {
+//     line.push('*');
+//     console.log(line);
+// }
+
+// parte 3
+
+let n = 5;
+let line = [];
+
+// inserir espaços dentro do array
+
 for(let index = 1; index <= 5; index += 1) {
-    line.push('*');
-    console.log(line);
+    line.push(' ');
 }
 
+// trocar os espaços por asteriscos
+
+for(let index = n - 1; index >= 0; index -= 1) {
+    line[index] = '*';
+    console.log(line);
+}
