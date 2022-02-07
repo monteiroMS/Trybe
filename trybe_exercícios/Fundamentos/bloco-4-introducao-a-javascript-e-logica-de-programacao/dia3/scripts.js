@@ -152,7 +152,7 @@ let line = [];
 
 // inserir espaços dentro do array
 
-for(let index = 1; index <= 5; index += 1) {
+for(let index = 1; index <= n; index += 1) {
     line.push(' ');
 }
 
