@@ -147,18 +147,50 @@
 
 // parte 3
 
+// let n = 5;
+// let line = [];
+
+// // inserir espaços dentro do array
+
+// for(let index = 1; index <= n; index += 1) {
+//     line.push(' ');
+// }
+
+// // trocar os espaços por asteriscos
+
+// for(let index = n - 1; index >= 0; index -= 1) {
+//     line[index] = '*';
+//     console.log(line);
+// }
+
+// parte 4
+
 let n = 5;
+
+// criar array com espaços
 let line = [];
-
-// inserir espaços dentro do array
-
 for(let index = 1; index <= n; index += 1) {
     line.push(' ');
 }
 
-// trocar os espaços por asteriscos
+// definir um ponto de partida mesmo que o número base seja par ou ímpar
+let pontoDePartida = 0;
 
-for(let index = n - 1; index >= 0; index -= 1) {
-    line[index] = '*';
-    console.log(line);
+if (n % 2 === 0) {
+    pontoDePartida = line.length / 2;
+} else {
+    pontoDePartida = (line.length - 1) / 2;
+}
+
+// montar a estrutura de repetição
+
+for(let index = 0; index <= pontoDePartida; index += 1) {
+    if (index === 0) {
+        line[pontoDePartida] = "*";
+        console.log(line);
+    } else {
+        line[pontoDePartida - index] = "*";
+        line[pontoDePartida + index] = "*";
+        console.log(line);
+    }
 }
