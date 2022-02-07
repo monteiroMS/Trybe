@@ -126,10 +126,15 @@
 let n = 5;
 let line = [];
 
+// for(let index = 1; index <= 5; index += 1) {
+//     line.push('*');
+// }
+// for(let index = 1; index <= 5; index += 1) {
+//     console.log(line);
+// }
+
 for(let index = 1; index <= 5; index += 1) {
     line.push('*');
-}
-for(let index = 1; index <= 5; index += 1) {
     console.log(line);
 }
 
