@@ -67,56 +67,69 @@
 // https://educacao.uol.com.br/disciplinas/matematica/numeros-primos-veja-algoritmo-para-encontra-los.htm#:~:text=Um%20n%C3%BAmero%20natural%20%C3%A9%20primo,ele%20mesmo%2C%20e%20por%201.
 // https://www.delftstack.com/pt/howto/javascript/javascript-remove-index-from-an-array/#:~:text=array%20em%20JavaScript.-,Use%20a%20fun%C3%A7%C3%A3o%20splice()%20para%20remover%20um%20elemento%20espec%C3%ADfico,do%20array%20adicionando%2Fremovendo%20elementos.
 
-// preciso de um array que vá de 2 a 50 já que 1 não é primo
+// // preciso de um array que vá de 2 a 50 já que 1 não é primo
 
-let numeros = [];
+// let numeros = [];
 
-for(index = 2; index <= 50; index += 1) {
-    numeros.push(index);
+// for(index = 2; index <= 50; index += 1) {
+//     numeros.push(index);
+// }
+
+// console.log(numeros);
+
+// // preciso remover os divisiveis por 2 sem tirar o 2
+
+// for(index = 0; index < numeros.length; index += 1) {
+//     if (numeros[index] % 2 === 0 && numeros[index] !== 2) {
+//         numeros.splice(index, 1);
+//     }
+// }
+
+// console.log(numeros);
+
+// // preciso remover os multiplos de 3 sem tirar o 3
+
+// for(index = 0; index < numeros.length; index += 1) {
+//     if (numeros[index] % 3 === 0 && numeros[index] !== 3) {
+//         numeros.splice(index, 1);
+//     }
+// }
+
+// console.log(numeros);
+
+// // preciso remover os multiplos de 5 sem tirar o 5
+
+// for(index = 0; index < numeros.length; index += 1) {
+//     if (numeros[index] % 5 === 0 && numeros[index] !== 5) {
+//         numeros.splice(index, 1);
+//     }
+// }
+
+// console.log(numeros);
+
+// // preciso remover os multiplos de 7 sem tirar o 7
+
+// for(index = 0; index < numeros.length; index += 1) {
+//     if (numeros[index] % 7 === 0 && numeros[index] !== 7) {
+//         numeros.splice(index, 1);
+//     }
+// }
+
+// console.log(numeros);
+
+// // cheguei no final da lista de checagem dos primos e terminei de tirar todos os não primos da lista. Agora preciso checar qual o maior dessa lista
+
+// console.log("O maior número primo entre 0 e 50 é " + Math.max(...numeros));
+
+// BONUS
+
+let n = 5;
+let line = [];
+
+for(let index = 1; index <= 5; index += 1) {
+    line.push('*');
+}
+for(let index = 1; index <= 5; index += 1) {
+    console.log(line);
 }
 
-console.log(numeros);
-
-// preciso remover os divisiveis por 2 sem tirar o 2
-
-for(index = 0; index < numeros.length; index += 1) {
-    if (numeros[index] % 2 === 0 && numeros[index] !== 2) {
-        numeros.splice(index, 1);
-    }
-}
-
-console.log(numeros);
-
-// preciso remover os multiplos de 3 sem tirar o 3
-
-for(index = 0; index < numeros.length; index += 1) {
-    if (numeros[index] % 3 === 0 && numeros[index] !== 3) {
-        numeros.splice(index, 1);
-    }
-}
-
-console.log(numeros);
-
-// preciso remover os multiplos de 5 sem tirar o 5
-
-for(index = 0; index < numeros.length; index += 1) {
-    if (numeros[index] % 5 === 0 && numeros[index] !== 5) {
-        numeros.splice(index, 1);
-    }
-}
-
-console.log(numeros);
-
-// preciso remover os multiplos de 7 sem tirar o 7
-
-for(index = 0; index < numeros.length; index += 1) {
-    if (numeros[index] % 7 === 0 && numeros[index] !== 7) {
-        numeros.splice(index, 1);
-    }
-}
-
-console.log(numeros);
-
-// cheguei no final da lista de checagem dos primos e terminei de tirar todos os não primos da lista. Agora preciso checar qual o maior dessa lista
-
-console.log("O maior número primo entre 0 e 50 é " + Math.max(...numeros));
