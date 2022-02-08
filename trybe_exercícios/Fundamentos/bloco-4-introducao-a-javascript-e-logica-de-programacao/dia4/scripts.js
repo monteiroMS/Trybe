@@ -102,17 +102,35 @@
 
 // 2
 
-let teste = [2, 13, 6, 7, 10, 15];
+// let teste = [2, 13, 6, 7, 10, 15];
+
+// function indiceMaiorDoArray(a) {
+//     let indiceMaior = 0;
+//     for(let indice in a) {
+//         if (a[indiceMaior] < a[indice]) {
+//             indiceMaior = indice;
+//         }
+//     }
+
+//     return indiceMaior;
+// }
+
+
+// console.log(indiceMaiorDoArray(teste));
+
+// 3
+
+let teste = [2, 4, 6, 7, 10, 0, -3];
 
 function indiceMaiorDoArray(a) {
-    let indiceMaior = 0;
+    let indiceMenor = 0;
     for(let indice in a) {
-        if (a[indiceMaior] < a[indice]) {
-            indiceMaior = indice;
+        if (a[indiceMenor] > a[indice]) {
+            indiceMenor = indice;
         }
     }
 
-    return indiceMaior;
+    return indiceMenor;
 }
 
 
