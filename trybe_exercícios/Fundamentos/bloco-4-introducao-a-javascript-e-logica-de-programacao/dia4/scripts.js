@@ -138,20 +138,49 @@
 
 // 4
 
-let names = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+// let names = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
-function verificaMaiorNome(a) {
+// function verificaMaiorNome(a) {
     
-    let namesSizes = [];
+//     let namesSizes = [];
 
-    for(index = 0; index < a.length; index += 1) {
-        namesSizes.push(a[index].length);
+//     for(index = 0; index < a.length; index += 1) {
+//         namesSizes.push(a[index].length);
+//     }
+
+//     biggerName = Math.max(...namesSizes);
+//     let biggerNameIndex = namesSizes.indexOf(biggerName);
+
+//     return names[biggerNameIndex];
+// }
+
+// console.log(verificaMaiorNome(names));
+
+// 5
+
+let numeros = [2, 3, 2, 5, 8, 2, 3];
+
+function queMaisSeRepete(a) {
+
+    let queMaisSeRepetiu = 0;
+    let vezesQueRepete = 0;
+    let indexMaisRepetido = 0;
+
+    for(let index in a) {
+        let numComparado = a[index];
+        for(let index2 in a) {
+            if (numComparado === a[index2]) {
+                vezesQueRepete += 1;
+            }
+        }
+        if (vezesQueRepete > queMaisSeRepetiu) {
+            queMaisSeRepetiu = vezesQueRepete;
+            indexMaisRepetido = index;
+        }
+        vezesQueRepete = 0;
     }
 
-    biggerName = Math.max(...namesSizes);
-    let biggerNameIndex = namesSizes.indexOf(biggerName);
-
-    return names[biggerNameIndex];
+    return a[indexMaisRepetido];
 }
 
-console.log(verificaMaiorNome(names));
+console.log(queMaisSeRepete(numeros));
