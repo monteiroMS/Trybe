@@ -85,17 +85,35 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
 
 
-function verificaPalindromo(a) {
-    let divided = a.split('');
-    let reversed = divided.reverse();
-    let b = reversed.join('');
-    if (a === b) {
-        resultado = true;
-    } else {
-        resultado = false;
+// function verificaPalindromo(a) {
+//     let divided = a.split('');
+//     let reversed = divided.reverse();
+//     let b = reversed.join('');
+//     if (a === b) {
+//         resultado = true;
+//     } else {
+//         resultado = false;
+//     }
+
+//     return resultado;
+// }
+
+// console.log(verificaPalindromo('desenvolvimento'));
+
+// 2
+
+let teste = [2, 13, 6, 7, 10, 15];
+
+function indiceMaiorDoArray(a) {
+    let indiceMaior = 0;
+    for(let indice in a) {
+        if (a[indiceMaior] < a[indice]) {
+            indiceMaior = indice;
+        }
     }
 
-    return resultado;
+    return indiceMaior;
 }
 
-console.log(verificaPalindromo('desenvolvimento'));
+
+console.log(indiceMaiorDoArray(teste));
