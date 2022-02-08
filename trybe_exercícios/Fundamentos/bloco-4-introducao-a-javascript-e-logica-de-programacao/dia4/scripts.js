@@ -158,29 +158,43 @@
 
 // 5
 
-let numeros = [2, 3, 2, 5, 8, 2, 3];
+// let numeros = [2, 3, 2, 5, 8, 2, 3];
 
-function queMaisSeRepete(a) {
+// function queMaisSeRepete(a) {
 
-    let queMaisSeRepetiu = 0;
-    let vezesQueRepete = 0;
-    let indexMaisRepetido = 0;
+//     let queMaisSeRepetiu = 0;
+//     let vezesQueRepete = 0;
+//     let indexMaisRepetido = 0;
 
-    for(let index in a) {
-        let numComparado = a[index];
-        for(let index2 in a) {
-            if (numComparado === a[index2]) {
-                vezesQueRepete += 1;
-            }
-        }
-        if (vezesQueRepete > queMaisSeRepetiu) {
-            queMaisSeRepetiu = vezesQueRepete;
-            indexMaisRepetido = index;
-        }
-        vezesQueRepete = 0;
+//     for(let index in a) {
+//         let numComparado = a[index];
+//         for(let index2 in a) {
+//             if (numComparado === a[index2]) {
+//                 vezesQueRepete += 1;
+//             }
+//         }
+//         if (vezesQueRepete > queMaisSeRepetiu) {
+//             queMaisSeRepetiu = vezesQueRepete;
+//             indexMaisRepetido = index;
+//         }
+//         vezesQueRepete = 0;
+//     }
+
+//     return a[indexMaisRepetido];
+// }
+
+// console.log(queMaisSeRepete(numeros));
+
+// 6
+
+let n = 5;
+
+function somaTodos(a) {
+    let total = 0;
+    for(let index = 0; index <= a; index += 1) {
+        total = total + index;
     }
-
-    return a[indexMaisRepetido];
+    return total;
 }
 
-console.log(queMaisSeRepete(numeros));
+console.log(somaTodos(n));
