@@ -120,18 +120,38 @@
 
 // 3
 
-let teste = [2, 4, 6, 7, 10, 0, -3];
+// let teste = [2, 4, 6, 7, 10, 0, -3];
 
-function indiceMaiorDoArray(a) {
-    let indiceMenor = 0;
-    for(let indice in a) {
-        if (a[indiceMenor] > a[indice]) {
-            indiceMenor = indice;
-        }
+// function indiceMaiorDoArray(a) {
+//     let indiceMenor = 0;
+//     for(let indice in a) {
+//         if (a[indiceMenor] > a[indice]) {
+//             indiceMenor = indice;
+//         }
+//     }
+
+//     return indiceMenor;
+// }
+
+
+// console.log(indiceMaiorDoArray(teste));
+
+// 4
+
+let names = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+function verificaMaiorNome(a) {
+    
+    let namesSizes = [];
+
+    for(index = 0; index < a.length; index += 1) {
+        namesSizes.push(a[index].length);
     }
 
-    return indiceMenor;
+    biggerName = Math.max(...namesSizes);
+    let biggerNameIndex = namesSizes.indexOf(biggerName);
+
+    return names[biggerNameIndex];
 }
 
-
-console.log(indiceMaiorDoArray(teste));
+console.log(verificaMaiorNome(names));
