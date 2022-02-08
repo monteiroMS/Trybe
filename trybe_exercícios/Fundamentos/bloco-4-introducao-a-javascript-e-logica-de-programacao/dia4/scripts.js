@@ -70,4 +70,6 @@ leitor['livrosFavoritos'].push(
     }
 )
 
-console.log(leitor['livrosFavoritos'][1]);
+// console.log(leitor['livrosFavoritos'][1]);
+
+console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " livros favoritos");
