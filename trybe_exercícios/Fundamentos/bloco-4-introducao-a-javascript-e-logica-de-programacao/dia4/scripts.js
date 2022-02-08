@@ -1,3 +1,5 @@
+// OBJETOS
+
 // EXERCÍCIO 1
 
 // let info = {
@@ -47,29 +49,53 @@
 
 // EXERCÍCIO 6 - feito com ajuda do gabarito do course
 
-let leitor = {
-    nome: 'Julia',
-    sobrenome: 'Pessoa',
-    idade: 21,
-    livrosFavoritos: [
-      {
-        titulo: 'O Pior Dia de Todos',
-        autor: 'Daniela Kopsch',
-        editora: 'Tordesilhas',
-      },
-    ],
-  };
+// let leitor = {
+//     nome: 'Julia',
+//     sobrenome: 'Pessoa',
+//     idade: 21,
+//     livrosFavoritos: [
+//       {
+//         titulo: 'O Pior Dia de Todos',
+//         autor: 'Daniela Kopsch',
+//         editora: 'Tordesilhas',
+//       },
+//     ],
+//   };
 
 //   console.log("O livro favorito de " + leitor.nome + " " + leitor.sobrenome + " se chama " + "'" + leitor['livrosFavoritos'][0]['titulo'] + "'");
 
-leitor['livrosFavoritos'].push(
-    {
-        titulo: 'Harry Potter e o Prisioneiro de Azkaban',
-        autor: 'JK Rowling',
-        editora: 'Rocco'
-    }
-)
+// leitor['livrosFavoritos'].push(
+//     {
+//         titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+//         autor: 'JK Rowling',
+//         editora: 'Rocco'
+//     }
+// )
 
 // console.log(leitor['livrosFavoritos'][1]);
 
-console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " livros favoritos");
+// console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " livros favoritos");
+
+// FUNÇÕES
+
+// 1
+// Resolvido após leitura dos artigos:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+
+
+function verificaPalindromo(a) {
+    let divided = a.split('');
+    let reversed = divided.reverse();
+    let b = reversed.join('');
+    if (a === b) {
+        resultado = true;
+    } else {
+        resultado = false;
+    }
+
+    return resultado;
+}
+
+console.log(verificaPalindromo('desenvolvimento'));
