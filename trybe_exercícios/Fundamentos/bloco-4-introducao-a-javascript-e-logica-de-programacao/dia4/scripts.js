@@ -191,7 +191,7 @@ let n = 5;
 
 function somaTodos(a) {
     let total = 0;
-    for(let index = 0; index <= a; index += 1) {
+    for(let index = 1; index <= a; index += 1) {
         total = total + index;
     }
     return total;
