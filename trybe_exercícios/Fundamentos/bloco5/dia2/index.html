@@ -95,12 +95,29 @@
         where6.appendChild(newSection2);
 
     // exercicio 7
+    // realizado com ajuda da página https://cursos.alura.com.br/forum/topico-inserir-imagem-dentro-do-javascript-89494
+
         let where7 = document.getElementsByClassName('left-content')[0];
         let newImage = document.createElement('img');
         newImage.src = 'https://picsum.photos/200';
         newImage.className = 'small-image';
         where7.appendChild(newImage);
+    
+    // exercicio 8
+        // primeiro cria a ul
+        let where8 = document.getElementsByClassName('right-content')[0];
+        let createList = document.createElement('ul');
+        where8.appendChild(createList);
 
+        // depois cria cada li da ul
+        let where85 = document.querySelector('.right-content').firstElementChild;
+        let arr = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+        let createListElements;
+        for (let index in arr) {
+            createListElements = document.createElement('li');
+            createListElements.innerText = arr[index];
+            where85.appendChild(createListElements);
+        }
 
 
     </script>
