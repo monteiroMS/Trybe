@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    // exercicio 1
+      let where = document.getElementsByTagName('body')[0];
+      let firstTitle = document.createElement('h1');
+      let firstTitleText = 'This is en exercise about DOM and how to create new elements using Javascript';
+      firstTitle.innerText = firstTitleText;
+      where.appendChild(firstTitle);
+
+    // exercicio 2
+        let where2 = document.getElementsByTagName('body')[0];
+        let mainCreate = document.createElement('main');
+        mainCreate.className = 'main-content';
+        where2.appendChild(mainCreate);
+
+    // exercicio 3
+        let where3 = document.getElementsByTagName('main')[0];
+        let sectionCreate = document.createElement('section');
+        sectionCreate.className = 'center-content';
+        where3.appendChild(sectionCreate);
+
+    // exercicio 4
+        let where4 = document.getElementsByTagName('section')[0];
+        let paragraphCreate = document.createElement('p');
+        paragraphCreate.innerText = "hey, i'm a paragraph, and you? i'm fine by the way thanks for asking";
+        where4.appendChild(paragraphCreate);
+
+    // exercicio 5
+        let where5 = document.getElementsByTagName('main')[0];
+        let newSection = document.createElement('section');
+        newSection.className = 'left-content';
+        where5.appendChild(newSection);
+
+    // exercicio 6
+        let where6 = document.getElementsByTagName('main')[0];
+        let newSection2 = document.createElement('section');
+        newSection2.className = 'right-content';
+        where6.appendChild(newSection2);
+
+    // exercicio 7
+    // realizado com ajuda da página https://cursos.alura.com.br/forum/topico-inserir-imagem-dentro-do-javascript-89494
+
+        let where7 = document.getElementsByClassName('left-content')[0];
+        let newImage = document.createElement('img');
+        newImage.src = 'https://picsum.photos/200';
+        newImage.className = 'small-image';
+        where7.appendChild(newImage);
+    
+    // exercicio 8
+        // primeiro cria a ul
+        let where8 = document.getElementsByClassName('right-content')[0];
+        let createList = document.createElement('ul');
+        where8.appendChild(createList);
+
+        // depois cria cada li da ul
+        let where85 = document.querySelector('.right-content').firstElementChild;
+        let arr = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+        let createListElements;
+        for (let index in arr) {
+            createListElements = document.createElement('li');
+            createListElements.innerText = arr[index];
+            where85.appendChild(createListElements);
+        }
+
+    // exercício 9
+        let where9 = document.getElementsByTagName('main')[0];
+        for (index = 0; index < 3; index += 1) {
+        let createH3s = document.createElement('h3');
+        where9.appendChild(createH3s);
+        }
+
+    // exercício 10
+        let where10 = document.getElementsByTagName('h1')[0];
+        where10.className = 'title';
+
+    // exercício 11
+        let where11 = document.querySelectorAll('h3');
+        for (let index in where11) {
+          where11[index].className = 'description';
+        }
+
+    // exercício 12
+        let where12 = document.getElementsByTagName('main')[0];
+        let sectionToBeRemoved = document.querySelectorAll('section')[1];
+        where12.removeChild(sectionToBeRemoved);
+
+    // exercicio 13
+        let where13 = document.getElementsByClassName('right-content')[0];
+        where13.style.marginRight = 'auto';
+
+    // exercício 14
+        let where14 = document.getElementsByClassName('center-content')[0].parentElement;
+        where14.style.backgroundColor = 'green';
+
+    // exercício 15
+        let where15 = document.getElementsByTagName('li')[9];
+        let where155 = document.getElementsByTagName('li')[8];
+        console.log(where15);
+        where15.remove();
+        where155.remove();
+
+
+    </script>
+  </body>
+</html>
