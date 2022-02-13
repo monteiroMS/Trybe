@@ -118,7 +118,7 @@
             createListElements.innerText = arr[index];
             where85.appendChild(createListElements);
         }
-        
+
     // exercício 9
         let where9 = document.getElementsByTagName('main')[0];
         for (index = 0; index < 3; index += 1) {
@@ -126,6 +126,16 @@
         where9.appendChild(createH3s);
         }
 
+    // exercício 10
+        let where10 = document.getElementsByTagName('h1')[0];
+        where10.className = 'title';
+
+    // exercício 11
+        let where11 = document.querySelectorAll('h3');
+        for (let index in where11) {
+          where11[index].className = 'description';
+        }
+        
     </script>
   </body>
 </html>
