@@ -107,3 +107,22 @@ addsEventOnButton();
   }
 
   addsClickEvent();
+
+// Exercício 6
+  function zoomIn() {
+    let where = document.querySelector('#days');
+    where.addEventListener('mouseover', function(event) {
+      event.target.style.fontSize = '30px';
+      event.target.style.fontWeight = '600';
+    })
+  }
+  zoomIn();
+  
+
+  function zoomOut() {
+    let where = document.querySelector('#days');
+    where.addEventListener('mouseout', function(event) {
+      event.target.style.fontSize = '20px';
+    })
+  }
+  zoomOut();
