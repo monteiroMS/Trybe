@@ -15,6 +15,8 @@ function createDaysOfTheWeek() {
   
   // Escreva seu código abaixo.
 
+
+// Exercício 1
 function createsDaysOfTheMonth() {
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   for (let index in dezDaysList) {
@@ -47,6 +49,7 @@ function addsSextou() {
 
 addsSextou();
 
+// Exercício 2
 function addsButtonWith(string) {
   let where = document.getElementsByClassName('buttons-container')[0];
   let createsSon = document.createElement('button');
@@ -55,6 +58,7 @@ function addsButtonWith(string) {
   where.appendChild(createsSon);
 }
 
+// Exercício 3
 addsButtonWith('Feriados');
 
 function addsEventOnButton() {
@@ -71,3 +75,14 @@ function addsEventOnButton() {
 }
 
 addsEventOnButton();
+
+// Exercício 4
+  function createsButtonFriday(string) {
+    let where = document.querySelector('.buttons-container');
+    let createsButton = document.createElement('button');
+    createsButton.innerText = string;
+    createsButton.className = 'btn-friday';
+    where.appendChild(createsButton);
+  }
+
+  createsButtonFriday('sextoooou');
