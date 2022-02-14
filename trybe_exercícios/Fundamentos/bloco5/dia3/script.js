@@ -30,19 +30,19 @@ createsDaysOfTheMonth();
 
 function addsFeriados() {
   let where = document.getElementsByClassName('day');
-  where[25].className = 'day holiday';
-  where[26].className = 'day holiday';
-  where[32].className = 'day holiday';
+  where[25].className += ' holiday';
+  where[26].className += ' holiday';
+  where[32].className += ' holiday';
 }
 
 addsFeriados();
 
 function addsSextou() {
   let where = document.getElementsByClassName('day');
-  where[5].className = 'day friday';
-  where[12].className = 'day friday';
-  where[19].className = 'day friday';
-  where[26].className = 'friday day holiday';
+  where[5].className += ' friday';
+  where[12].className += ' friday';
+  where[19].className += ' friday';
+  where[26].className += ' friday';
 }
 
 addsSextou();
@@ -51,8 +51,23 @@ function addsButtonWith(string) {
   let where = document.getElementsByClassName('buttons-container')[0];
   let createsSon = document.createElement('button');
   createsSon.innerText = string;
-  createsSon.className = 'btn-holiday';
+  createsSon.id = 'btn-holiday';
   where.appendChild(createsSon);
 }
 
 addsButtonWith('Feriados');
+
+function addsEventOnButton() {
+  let where = document.querySelector('#btn-holiday');
+  where.addEventListener('click', changesBackgroundColor);
+
+  function changesBackgroundColor() {
+    let element = document.getElementsByClassName('holiday');
+    for (let index in element) {
+      element[index].classList.toggle('itsHoliday');
+    }
+  }
+
+}
+
+addsEventOnButton();
