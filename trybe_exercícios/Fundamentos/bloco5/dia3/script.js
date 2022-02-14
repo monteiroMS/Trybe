@@ -86,3 +86,24 @@ addsEventOnButton();
   }
 
   createsButtonFriday('sextoooou');
+
+// Exercício 5
+  function addsClickEvent() {
+    let where = document.querySelector('.btn-friday');
+    where.addEventListener('click', modifiesText);
+    let sextou = 'SEXTOU O/';
+    let fridayArrays = [4, 11, 18, 25];
+
+    function modifiesText() {
+      let where = document.getElementsByClassName('friday');
+      for (let index in where) {
+        if (where[index].innerText !== sextou) {
+          where[index].innerText = sextou;
+        } else {
+          where[index].innerText = fridayArrays[index];
+        }
+      }
+    }
+  }
+
+  addsClickEvent();
