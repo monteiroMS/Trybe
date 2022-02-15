@@ -158,3 +158,17 @@ addsEventOnButton();
   }
 
   addsEventToTasks();
+
+// Exercício 10
+  function addsEventToDays() {
+    let where = document.getElementById('days');
+    where.addEventListener('click', function(event) {
+      if (event.target.style.color !== 'blue') { 
+        event.target.style.color = 'blue';
+      } else {
+        event.target.style.color = 'rgb(119,119,119)';
+      }
+    })
+  }
+
+  addsEventToDays();
