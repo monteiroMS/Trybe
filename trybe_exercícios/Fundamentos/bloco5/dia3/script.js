@@ -148,3 +148,13 @@ addsEventOnButton();
   }
 
   addsColorToDiv('blue');
+
+// Exercício 9
+  function addsEventToTasks() {
+    let where = document.querySelector('.task');
+    where.addEventListener('click', function(event) {
+      event.target.classList.toggle('selected');
+    })
+  }
+
+  addsEventToTasks();
