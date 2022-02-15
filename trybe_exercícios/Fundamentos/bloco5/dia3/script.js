@@ -172,3 +172,34 @@ addsEventOnButton();
   }
 
   addsEventToDays();
+
+// Exercício 11
+  function addsCompromissos() {
+    let caixaDeTexto = document.querySelector('#task-input');
+    let buttonAdicionar = document.querySelector('#btn-add');
+    let meusCompromissos = document.querySelector('.task-list');
+
+    buttonAdicionar.addEventListener('click', function() {
+      if (caixaDeTexto.value.length > 0) {
+        let createsLi = document.createElement('li');
+        createsLi.innerText =       caixaDeTexto.value;
+        meusCompromissos.appendChild(createsLi);
+        caixaDeTexto.value = '';
+      } else {
+        alert('Erro: Digite pelo menos 1 caractere.');
+      }
+    })
+
+    caixaDeTexto.addEventListener('keyup', function(event) {
+      if (event.key === 'Enter' && caixaDeTexto.value.length > 0) {
+        let createsLi = document.createElement('li');
+        createsLi.innerText =       caixaDeTexto.value;
+        meusCompromissos.appendChild(createsLi);
+        caixaDeTexto.value = '';
+      } else if (event.key === 'Enter' && caixaDeTexto.value.length === 0) {
+        alert('Erro: Digite pelo menos 1 caractere.');
+      } 
+    })    
+  }
+
+  addsCompromissos();
