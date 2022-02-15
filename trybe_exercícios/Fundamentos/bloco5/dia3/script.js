@@ -59,6 +59,8 @@ function addsButtonWith(string) {
 }
 
 // Exercício 3
+// feito após leitura da página https://www.w3schools.com/howto/howto_js_toggle_class.asp
+
 addsButtonWith('Feriados');
 
 function addsEventOnButton() {
@@ -126,3 +128,12 @@ addsEventOnButton();
     })
   }
   zoomOut();
+
+// Exercícios 7
+  function addsNewTask(string) {
+    let where = document.querySelector('.my-tasks');
+    let createsTask = document.createElement('span');
+    createsTask.innerText = string;
+    where.appendChild(createsTask);
+  }
+  addsNewTask('Projeto');
