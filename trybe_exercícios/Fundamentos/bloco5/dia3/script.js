@@ -129,7 +129,7 @@ addsEventOnButton();
   }
   zoomOut();
 
-// Exercícios 7
+// Exercício 7
   function addsNewTask(string) {
     let where = document.querySelector('.my-tasks');
     let createsTask = document.createElement('span');
@@ -137,3 +137,14 @@ addsEventOnButton();
     where.appendChild(createsTask);
   }
   addsNewTask('Projeto');
+
+// Exercício 8
+  function addsColorToDiv(string) {
+    let where = document.querySelector('.my-tasks');
+    let createsDiv = document.createElement('div');
+    createsDiv.className = 'task';
+    createsDiv.style.backgroundColor = string;
+    where.appendChild(createsDiv);
+  }
+
+  addsColorToDiv('blue');
