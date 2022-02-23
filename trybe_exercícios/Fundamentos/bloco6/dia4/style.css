@@ -78,6 +78,9 @@ body {
   flex-direction: column;
   margin: 20px;
   flex-basis: 350px;
+  border: #5C687C 1px solid;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .aside-container h3, h4 {
