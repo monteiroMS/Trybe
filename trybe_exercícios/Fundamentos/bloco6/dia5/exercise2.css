@@ -1,0 +1,280 @@
+@media screen and (max-width: 500px) {
+
+  .container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    background-color: brown;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  header p {
+    flex-basis: 80%;  
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+
+  header nav {
+    flex-grow: 1;
+    display: none;
+  }
+
+  .menuOn {
+    display: flex;
+    flex-basis: content;
+    justify-content: space-around;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  .aside-one {
+    border-left: brown solid 5px;
+  }
+
+  #ul-one {
+    display: none;
+  }
+
+  .aside-one-ON {
+    display: flex !important;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .aside-two {
+    border-left: brown solid 5px;
+    margin-top: 5px;
+  }
+
+  #ul-two {
+    display: none;
+  }
+
+  .aside-two-ON {
+    display: flex !important;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1200px) {
+  .container { 
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    background-color: brown;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  header p {
+    flex-basis: 80%;  
+    text-align: start;
+    font-size: 25px;
+    color: white;
+  }
+
+  header nav {
+    flex-grow: 1;
+    display: none;
+  }
+
+  header nav p {
+    text-align: center;
+  }
+
+
+  .menuOn {
+    display: flex;
+    flex-basis: content;
+    justify-content: space-around;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  .aside-one {
+    border-left: brown solid 5px;
+  }
+
+  #ul-one {
+    display: none;
+  }
+
+  .aside-one-ON {
+    display: flex !important;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .aside-two {
+    border-left: brown solid 5px;
+    margin-top: 5px;
+  }
+
+  #ul-two {
+    display: none;
+  }
+
+  .aside-two-ON {
+    display: flex !important;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .container { 
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    background-color: brown;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header p {
+    flex-basis: 45%;  
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  header nav {
+    flex-basis: 45%;
+    display: flex;
+  }
+
+  header nav p {  
+    text-align: center;
+    font-size: 20px;
+    color: white;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  .aside-one {
+    border-left: brown solid 5px;
+  }
+
+  #ul-one {
+    display: none;
+  }
+
+  .aside-one-ON {
+    display: flex !important;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .aside-two {
+    border-left: brown solid 5px;
+    margin-top: 5px;
+  }
+
+  #ul-two {
+    display: none;
+  }
+
+  .aside-two-ON {
+    display: flex !important;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .main-content h1 {
+    text-align: center;
+  }
+
+  #main-text {
+    display: flex;
+    flex-flow: column wrap;
+    height: 1380px;
+    align-items: center;
+    padding: 30px;
+  }
+
+  #main-text p {
+    width: 500px;
+    text-align: justify;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    color: white;
+    padding: 20px;
+  }
+} 
