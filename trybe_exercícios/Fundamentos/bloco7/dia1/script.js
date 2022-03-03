@@ -1,3 +1,4 @@
+// PARTE 1
 // EXERCÍCIO 1
 
 // const testingScope = escopo => {
@@ -15,9 +16,26 @@
 
 // EXERCÍCIO 2
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-const compare = (a, b) => a - b;
-oddsAndEvens.sort(compare);
+// const compare = (a, b) => a - b;
+// oddsAndEvens.sort(compare);
 
-console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
+// console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
+
+// PARTE 2
+// EXERCÍCIO 1
+
+const retornaFatorial = n => {
+  if (n <= 1) {
+    let result = 1;
+    return result;
+  } else {
+    let fatorial = n * (n - 1);
+    for (let i = 2; i < n; i += 1) {
+      fatorial = fatorial * (n - i);
+    }
+    return fatorial;
+  }
+};
+console.log(retornaFatorial(5));
