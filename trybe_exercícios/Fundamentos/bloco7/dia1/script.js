@@ -33,7 +33,7 @@ const retornaFatorial = n => {
   } else {
     let fatorial = n * (n - 1);
     for (let i = 2; i < n; i += 1) {
-      fatorial = fatorial * (n - i);
+      fatorial *= (n - i);
     }
     return fatorial;
   }
