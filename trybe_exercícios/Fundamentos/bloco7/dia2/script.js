@@ -1,3 +1,5 @@
+// PARTE 1
+
 function verifiesInput(valor1, valor2) {
   if (isNaN(valor1) || isNaN(valor2)) {
     throw new Error('Por favor, insira apenas valores numéricos');
@@ -27,3 +29,6 @@ window.onload = () => {
   const button = document.getElementById('button');
   button.addEventListener('click', sum);
 }
+
+// PARTE 2
+
