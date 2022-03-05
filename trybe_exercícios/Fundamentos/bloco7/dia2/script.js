@@ -128,3 +128,7 @@ console.log(objLength(lesson2));
 
 const objValues = obj => Object.values(obj);
 console.log(objValues(lesson2));
+
+const allLessons = {};
+Object.assign(allLessons, { lesson1, lesson2, lesson3 });
+console.log(allLessons);
