@@ -95,3 +95,27 @@
 // console.log(orderModifier(orderResume));
 
 // PARTE 3
+
+const lesson1 = {
+  materia: 'Matemática',
+  numeroEstudantes: 20,
+  professor: 'Maria Clara',
+  turno: 'manhã',
+};
+
+const lesson2 = {
+  materia: 'História',
+  numeroEstudantes: 20,
+  professor: 'Carlos',
+};
+
+const lesson3 = {
+  materia: 'Matemática',
+  numeroEstudantes: 10,
+  professor: 'Maria Clara',
+  turno: 'noite',
+};
+
+const objAdd = (obj, key, value) => obj[key] = value;
+objAdd(lesson2, 'turno', 'Noite');
+console.log(lesson2);
