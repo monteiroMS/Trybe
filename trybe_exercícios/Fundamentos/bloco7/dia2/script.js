@@ -126,3 +126,5 @@ console.log(objKeys(lesson2));
 const objLength = obj => Object.keys(obj).length;
 console.log(objLength(lesson2));
 
+const objValues = obj => Object.values(obj);
+console.log(objValues(lesson2));
