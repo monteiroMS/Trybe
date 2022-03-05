@@ -1,34 +1,89 @@
-// PARTE 1
+// // PARTE 1
 
-function verifiesInput(valor1, valor2) {
-  if (isNaN(valor1) || isNaN(valor2)) {
-    throw new Error('Por favor, insira apenas valores numéricos');
-  }
-  if (!valor1 || !valor2) {
-    throw new Error('Por favor, insira dois valores para realizar a soma');
-  }
-}
+// function verifiesInput(valor1, valor2) {
+//   if (isNaN(valor1) || isNaN(valor2)) {
+//     throw new Error('Por favor, insira apenas valores numéricos');
+//   }
+//   if (!valor1 || !valor2) {
+//     throw new Error('Por favor, insira dois valores para realizar a soma');
+//   }
+// }
 
-function sum() {
-  try {
-    const value1 = document.getElementById('value1').value;
-    const value2 = document.getElementById('value2').value;
-    verifiesInput(value1, value2);
-    const result = parseInt(value1) + parseInt(value2);
-    document.getElementById('result').innerHTML = `Resultado: ${result}`;
-  } catch(err) {
-    alert(err.message);
-    document.getElementById('result').innerHTML = '';
-  } finally {
-    document.getElementById('value1').value = '';
-    document.getElementById('value2').value = '';
-  }
-}
+// function sum() {
+//   try {
+//     const value1 = document.getElementById('value1').value;
+//     const value2 = document.getElementById('value2').value;
+//     verifiesInput(value1, value2);
+//     const result = parseInt(value1) + parseInt(value2);
+//     document.getElementById('result').innerHTML = `Resultado: ${result}`;
+//   } catch(err) {
+//     alert(err.message);
+//     document.getElementById('result').innerHTML = '';
+//   } finally {
+//     document.getElementById('value1').value = '';
+//     document.getElementById('value2').value = '';
+//   }
+// }
 
-window.onload = () => {
-  const button = document.getElementById('button');
-  button.addEventListener('click', sum);
-}
+// window.onload = () => {
+//   const button = document.getElementById('button');
+//   button.addEventListener('click', sum);
+// }
 
 // PARTE 2
 
+const orderResume = {
+  name: 'Rafael Andrade',
+  phoneNumber: '11-98763-1416',
+  address: {
+    street: 'Rua das Flores',
+    number: '389',
+    apartment: '701',
+  },
+  order: {
+    pizza: {
+      marguerita: {
+        amount: 1,
+        price: 25,
+      },
+      pepperoni: {
+        amount: 1,
+        price: 20,
+      }
+    },
+    drinks: {
+      coke: {
+        type: 'Coca-Cola Zero',
+        price: 10,
+        amount: 1,
+      }
+    },
+    delivery: {
+      deliveryPerson: 'Ana Silveira',
+      price: 5,
+    }
+  },
+  payment: {
+    total: 60,
+  },
+};
+
+const customerInfo = (obj) => {
+  const pessoaRecebedora = obj.order.delivery.deliveryPerson;
+  const nomePedido = obj.name;
+  const tel = obj.phoneNumber;
+  const rua = obj.address.street;
+  const numeroCasa = obj.address.number;
+  const apto = obj.address.apartment;
+
+  return `Olá ${pessoaRecebedora}, entrega para: ${nomePedido}, Telefone: ${tel}, R. ${rua}, Nº: ${numeroCasa}, AP: ${apto}`;
+}
+
+console.log(customerInfo(orderResume));
+
+const orderModifier = (order) => {
+  // Adicione abaixo as informações necessárias.
+
+}
+
+orderModifier(order);
