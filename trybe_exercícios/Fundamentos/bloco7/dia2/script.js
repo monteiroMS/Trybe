@@ -88,7 +88,7 @@
 //   const sabor2 = Object.keys(obj.order.pizza)[1];
 //   const bebida = obj.order.drinks.coke.type;
 //   const valor = obj.payment.total;
-  
+
 //   return `Olá ${obj.name}, o total do seu pedido de ${sabor1}, ${sabor2} e ${bebida} é R$ ${valor},00.`
 // }
 
@@ -116,19 +116,35 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const objAdd = (obj, key, value) => obj[key] = value;
-objAdd(lesson2, 'turno', 'Noite');
-console.log(lesson2);
+// 1
+// const objAdd = (obj, key, value) => obj[key] = value;
+// objAdd(lesson2, 'turno', 'Noite');
+// console.log(lesson2);
 
-const objKeys = obj => Object.keys(obj);
-console.log(objKeys(lesson2));
+// 2
+// const objKeys = obj => Object.keys(obj);
+// console.log(objKeys(lesson2));
 
-const objLength = obj => Object.keys(obj).length;
-console.log(objLength(lesson2));
+// 3
+// const objLength = obj => Object.keys(obj).length;
+// console.log(objLength(lesson2));
 
-const objValues = obj => Object.values(obj);
-console.log(objValues(lesson2));
+// 4
+// const objValues = obj => Object.values(obj);
+// console.log(objValues(lesson2));
 
+// 5
 const allLessons = {};
 Object.assign(allLessons, { lesson1, lesson2, lesson3 });
 console.log(allLessons);
+
+// 6
+const totalStudents = (obj) => {
+  let soma = 0;
+  const array = Object.keys(obj);
+  for (let index in array) {
+    soma += obj[array[index]]['numeroEstudantes'];
+  }
+  return soma;
+}
+console.log(totalStudents(allLessons));
