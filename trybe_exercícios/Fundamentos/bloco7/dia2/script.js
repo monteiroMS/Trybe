@@ -32,64 +32,66 @@
 
 // PARTE 2
 
-const orderResume = {
-  name: 'Rafael Andrade',
-  phoneNumber: '11-98763-1416',
-  address: {
-    street: 'Rua das Flores',
-    number: '389',
-    apartment: '701',
-  },
-  order: {
-    pizza: {
-      marguerita: {
-        amount: 1,
-        price: 25,
-      },
-      pepperoni: {
-        amount: 1,
-        price: 20,
-      }
-    },
-    drinks: {
-      coke: {
-        type: 'Coca-Cola Zero',
-        price: 10,
-        amount: 1,
-      }
-    },
-    delivery: {
-      deliveryPerson: 'Ana Silveira',
-      price: 5,
-    }
-  },
-  payment: {
-    total: 60,
-  },
-};
+// const orderResume = {
+//   name: 'Rafael Andrade',
+//   phoneNumber: '11-98763-1416',
+//   address: {
+//     street: 'Rua das Flores',
+//     number: '389',
+//     apartment: '701',
+//   },
+//   order: {
+//     pizza: {
+//       marguerita: {
+//         amount: 1,
+//         price: 25,
+//       },
+//       pepperoni: {
+//         amount: 1,
+//         price: 20,
+//       }
+//     },
+//     drinks: {
+//       coke: {
+//         type: 'Coca-Cola Zero',
+//         price: 10,
+//         amount: 1,
+//       }
+//     },
+//     delivery: {
+//       deliveryPerson: 'Ana Silveira',
+//       price: 5,
+//     }
+//   },
+//   payment: {
+//     total: 60,
+//   },
+// };
 
-const customerInfo = (obj) => {
-  const pessoaRecebedora = obj.order.delivery.deliveryPerson;
-  const nomePedido = obj.name;
-  const tel = obj.phoneNumber;
-  const rua = obj.address.street;
-  const numeroCasa = obj.address.number;
-  const apto = obj.address.apartment;
+// const customerInfo = (obj) => {
+//   const pessoaRecebedora = obj.order.delivery.deliveryPerson;
+//   const nomePedido = obj.name;
+//   const tel = obj.phoneNumber;
+//   const rua = obj.address.street;
+//   const numeroCasa = obj.address.number;
+//   const apto = obj.address.apartment;
 
-  return `Olá ${pessoaRecebedora}, entrega para: ${nomePedido}, Telefone: ${tel}, R. ${rua}, Nº: ${numeroCasa}, AP: ${apto}`;
-}
+//   return `Olá ${pessoaRecebedora}, entrega para: ${nomePedido}, Telefone: ${tel}, R. ${rua}, Nº: ${numeroCasa}, AP: ${apto}`;
+// }
 
-console.log(customerInfo(orderResume));
+// console.log(customerInfo(orderResume));
 
-const orderModifier = (obj) => {
-  obj.name = 'Luiz Silva';
-  obj.payment.total = '50';
-  const sabor1 = Object.keys(obj.order.pizza)[0];
-  const sabor2 = Object.keys(obj.order.pizza)[1];
-  const bebida = obj.order.drinks.coke.type;
-  const valor = obj.payment.total;
+// const orderModifier = (obj) => {
+//   obj.name = 'Luiz Silva';
+//   obj.payment.total = '50';
+//   const sabor1 = Object.keys(obj.order.pizza)[0];
+//   const sabor2 = Object.keys(obj.order.pizza)[1];
+//   const bebida = obj.order.drinks.coke.type;
+//   const valor = obj.payment.total;
   
-  return `Olá ${obj.name}, o total do seu pedido de ${sabor1}, ${sabor2} e ${bebida} é R$ ${valor},00.`
-}
+//   return `Olá ${obj.name}, o total do seu pedido de ${sabor1}, ${sabor2} e ${bebida} é R$ ${valor},00.`
+// }
 
-console.log(orderModifier(orderResume));
+// console.log(orderModifier(orderResume));
+
+// PARTE 3
