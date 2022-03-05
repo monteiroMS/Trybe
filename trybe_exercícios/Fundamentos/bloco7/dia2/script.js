@@ -120,5 +120,9 @@ const objAdd = (obj, key, value) => obj[key] = value;
 objAdd(lesson2, 'turno', 'Noite');
 console.log(lesson2);
 
-const objKeys = (obj) => Object.keys(obj);
+const objKeys = obj => Object.keys(obj);
 console.log(objKeys(lesson2));
+
+const objLength = obj => Object.keys(obj).length;
+console.log(objLength(lesson2));
+
