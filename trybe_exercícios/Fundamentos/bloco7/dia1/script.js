@@ -38,4 +38,20 @@ const retornaFatorial = n => {
     return fatorial;
   }
 };
-console.log(retornaFatorial(5));
+// console.log(retornaFatorial(6));
+
+// EXERCÍCIO 2
+const maiorPalavra = text => {
+  const array = text.split(' ');
+  let maxLength = 0;
+  let result = '';
+  for (let word of array) {
+    if (word.length > maxLength) {
+      maxLength = word.length;
+      result = word;
+    }
+  }
+  return result;
+}
+
+console.log(maiorPalavra('hey a'));
