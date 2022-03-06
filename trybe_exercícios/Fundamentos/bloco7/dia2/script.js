@@ -151,10 +151,10 @@ const totalStudents = (obj) => {
 
 // 7
 const getValueByIndex = (obj, index) => Object.values(obj)[index];
-console.log(getValueByIndex(lesson1, 0));
+// console.log(getValueByIndex(lesson1, 0));
 
 // 8
-function verifiesIfContains(obj, chave, valor) {
+const verifiesIfContains = (obj, chave, valor) => {
   const array = Object.entries(obj);
   let result = false;
   for (let index in array) {
@@ -162,4 +162,18 @@ function verifiesIfContains(obj, chave, valor) {
   }
   return result;  
 }
-console.log(verifiesIfContains(lesson1, 'materia', 'Matemática'));
+// console.log(verifiesIfContains(lesson1, 'materia', 'Matemática'));
+
+// BÔNUS
+// 1
+const sumMathStudents = (obj) => {
+  const content = Object.values(obj);
+  let soma = 0;
+  for (let index in content) {
+    if (content[index].materia === 'Matemática') {
+      soma += content[index].numeroEstudantes;
+    }
+  }
+  return soma;
+}
+console.log(sumMathStudents(allLessons));
