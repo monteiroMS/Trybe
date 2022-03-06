@@ -150,6 +150,16 @@ const totalStudents = (obj) => {
 // console.log(totalStudents(allLessons));
 
 // 7
-
 const getValueByIndex = (obj, index) => Object.values(obj)[index];
 console.log(getValueByIndex(lesson1, 0));
+
+// 8
+function verifiesIfContains(obj, chave, valor) {
+  const array = Object.entries(obj);
+  let result = false;
+  for (let index in array) {
+    if (array[index][0] === chave && array[index][1] === valor) result = true; 
+  }
+  return result;  
+}
+console.log(verifiesIfContains(lesson1, 'materia', 'Matemática'));
