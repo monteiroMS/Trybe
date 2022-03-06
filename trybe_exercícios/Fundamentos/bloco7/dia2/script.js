@@ -166,14 +166,38 @@ const verifiesIfContains = (obj, chave, valor) => {
 
 // BÔNUS
 // 1
-const sumMathStudents = (obj) => {
+const sumStudents = (obj, subject) => {
   const content = Object.values(obj);
   let soma = 0;
   for (let index in content) {
-    if (content[index].materia === 'Matemática') {
+    if (content[index].materia === subject) {
       soma += content[index].numeroEstudantes;
     }
   }
   return soma;
 }
-console.log(sumMathStudents(allLessons));
+// console.log(sumStudents(allLessons, 'Matemática'));
+
+// 2
+const getInfo = (obj, teacher) => {
+  let totalEstudantes = 0;
+  let arrayAulas = [];
+  const content = Object.values(obj);
+  for (let index in content) {
+    if (content[index].professor === teacher) {
+      totalEstudantes += content[index].numeroEstudantes;
+      arrayAulas.push(content[index].materia);
+    }
+  }
+  return { aulas: arrayAulas, estudantes: totalEstudantes };
+  ;
+}
+
+const report = (obj, teacher) => {
+  const report = {};
+  report.professor = teacher;
+  Object.assign(report, getInfo(obj, teacher));
+  return report;
+}
+
+console.log(report(allLessons, 'Maria Clara'));
