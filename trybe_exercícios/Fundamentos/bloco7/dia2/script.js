@@ -136,7 +136,7 @@ const lesson3 = {
 // 5
 const allLessons = {};
 Object.assign(allLessons, { lesson1, lesson2, lesson3 });
-console.log(allLessons);
+// console.log(allLessons);
 
 // 6
 const totalStudents = (obj) => {
@@ -147,4 +147,9 @@ const totalStudents = (obj) => {
   }
   return soma;
 }
-console.log(totalStudents(allLessons));
+// console.log(totalStudents(allLessons));
+
+// 7
+
+const getValueByIndex = (obj, index) => Object.values(obj)[index];
+console.log(getValueByIndex(lesson1, 0));
