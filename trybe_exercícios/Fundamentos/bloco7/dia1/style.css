@@ -1,0 +1,10 @@
+#clickCount {
+    border: red solid 5px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+    font-size: x-large;
+    background-color: lightgray;
+}
