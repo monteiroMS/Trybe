@@ -26,32 +26,45 @@
 // PARTE 2
 // EXERCÍCIO 1
 
-const retornaFatorial = n => {
-  if (n <= 1) {
-    let result = 1;
-    return result;
-  } else {
-    let fatorial = n * (n - 1);
-    for (let i = 2; i < n; i += 1) {
-      fatorial *= (n - i);
-    }
-    return fatorial;
-  }
-};
+// const retornaFatorial = n => {
+//   if (n <= 1) {
+//     let result = 1;
+//     return result;
+//   } else {
+//     let fatorial = n * (n - 1);
+//     for (let i = 2; i < n; i += 1) {
+//       fatorial *= (n - i);
+//     }
+//     return fatorial;
+//   }
+// };
 // console.log(retornaFatorial(6));
 
 // EXERCÍCIO 2
-const maiorPalavra = text => {
-  const array = text.split(' ');
-  let maxLength = 0;
-  let result = '';
-  for (let word of array) {
-    if (word.length > maxLength) {
-      maxLength = word.length;
-      result = word;
-    }
-  }
-  return result;
-}
+// const maiorPalavra = text => {
+//   const array = text.split(' ');
+//   let maxLength = 0;
+//   let result = '';
+//   for (let word of array) {
+//     if (word.length > maxLength) {
+//       maxLength = word.length;
+//       result = word;
+//     }
+//   }
+//   return result;
+// }
 
-console.log(maiorPalavra('hey a'));
+// console.log(maiorPalavra('hey a'));
+
+// EXERCÍCIO 3
+const exercicio3 = () => {
+  let clickCount = 0;
+  let textCount = document.getElementById('clickCount');
+  const button = document.getElementById('button');
+  button.addEventListener('click', () => {
+    clickCount += 1;
+    textCount.innerText = clickCount;
+  });
+}
+exercicio3();
+
