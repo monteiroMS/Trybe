@@ -57,14 +57,56 @@
 // console.log(maiorPalavra('hey a'));
 
 // EXERCÍCIO 3
-const exercicio3 = () => {
-  let clickCount = 0;
-  let textCount = document.getElementById('clickCount');
-  const button = document.getElementById('button');
-  button.addEventListener('click', () => {
-    clickCount += 1;
-    textCount.innerText = clickCount;
-  });
-}
-exercicio3();
+// const exercicio3 = () => {
+//   let clickCount = 0;
+//   let textCount = document.getElementById('clickCount');
+//   const button = document.getElementById('button');
+//   button.addEventListener('click', () => {
+//     clickCount += 1;
+//     textCount.innerText = clickCount;
+//   });
+// }
+// exercicio3();
 
+// EXERCÍCIO 4 PARTE 1
+// const funcao1 = (string) => `Tryber ${string} aqui!`;
+
+// const skills = ['HTML', 'CSS', 'JAVASCRIPT', 'GIT & GITHUB', 'ASSERTIVIDADE'];
+
+// const funcao2 = (funcao) => {
+//   return `
+//   <ul>${funcao} Minhas cinco principais habilidades são:
+//     <li>${skills[4]}</li>
+//     <li>${skills[1]}</li>
+//     <li>${skills[3]}</li>
+//     <li>${skills[0]}</li>
+//     <li>${skills[2]}</li>
+//     #goTrybe
+//   </ul>`
+// }
+
+// console.log(funcao2(funcao1('Matheus')));
+// const body = document.getElementsByTagName('body')[0];
+// const p = document.createElement('p');
+// p.innerHTML = funcao2(funcao1('Matheus'));
+// body.appendChild(p);
+
+const array = ["Android", "iOS", "Architecture", "Teach", "Run"];
+
+function buildSkillsPhrase (paramOne) {
+    const fun1 = paramInner => `Tryber ${paramInner} aqui! Tudo bem?`;
+    let result = `${fun1(paramOne)} Minhas cinco principais habilidades são:`;
+
+    array.forEach((skill) =>
+    result = `${result}
+    - ${skill}`);
+
+    result = `
+    ${result}
+
+    #goTrybe`;
+
+    return result;
+}
+
+console.log(buildSkillsPhrase("Lucas"));
