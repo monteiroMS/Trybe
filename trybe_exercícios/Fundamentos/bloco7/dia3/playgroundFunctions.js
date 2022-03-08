@@ -263,8 +263,6 @@ function generatePhoneNumber(array) {
     return resultadoFinal;
   }
   
-  console.log(triangleCheck(10, 14, 8));
-  
   // Desafio 13
   // resolvido após a leitura da página https://stackoverflow.com/questions/1623221/how-to-find-a-number-in-a-string-using-javascript/30160994
   // e também o site https://www.alura.com.br/artigos/convertendo-string-para-numero-em-javascript?gclid=CjwKCAiA9aKQBhBREiwAyGP5lSGV5uCnZ2mbyl4iXzEop8gUO637haQ0Oo7NXF78btYczUAUktGVPxoCFKQQAvD_BwE
