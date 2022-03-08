@@ -140,7 +140,7 @@ function compareTrue(valor1, valor2) {
   // Desafio 10
   // resolvido com ajuda do artigo https://www.edsonemiliano.com.br/blog/como-ordenar-uma-array-de-objetos-com-javascript-sort/#:~:text=Caso%20voc%C3%AA%20tenha%20um%20array,usar%20o%20m%C3%A9todo%20sort().&text=return%20(a.,nome)%20%3F
   
-  function techList(array, name) {
+  const techList = (array, name) => {
     array.sort();
     let objects = [];
     if (array.length !== 0) {
