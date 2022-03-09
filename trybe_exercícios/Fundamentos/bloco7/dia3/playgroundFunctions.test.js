@@ -1,17 +1,7 @@
 const {
-    generatePhoneNumber,
     hydrate,
-    triangleCheck,
-    calcArea,
-    catAndMouse,
-    compareTrue,
-    concatName,
     decode,
     encode,
-    fizzBuzz,
-    footballPoints,
-    highestCount,
-    splitSentence,
     techList,
   } = require('./playgroundFunctions');
 
