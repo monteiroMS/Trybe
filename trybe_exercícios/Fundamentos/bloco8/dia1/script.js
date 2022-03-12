@@ -1,3 +1,5 @@
+// Exercício 1
+
 const createEmail = (name) => {
   const emailName = name.toLowerCase().split(' ').join('_');
   return `${emailName}@trybe.com`;
@@ -12,4 +14,18 @@ const newEmployees = () => {
   return employees;
 };
 
-console.log(newEmployees());
+// console.log(newEmployees());
+
+// Exercício 2
+
+const verifiesNumber = (number, otherNumber) => (
+  number === otherNumber ? 'Parabéns, você ganhou!' : 'Tente Novamente'
+);
+
+const amIrich = (number) => {
+  const numeroSorteado = Math.floor(Math.random() * 5) + 1;
+  console.log(numeroSorteado);
+  return verifiesNumber(number, numeroSorteado);
+};
+
+console.log(amIrich(4));
