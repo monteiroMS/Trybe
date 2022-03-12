@@ -28,4 +28,30 @@ const amIrich = (number) => {
   return verifiesNumber(number, numeroSorteado);
 };
 
-console.log(amIrich(4));
+// console.log(amIrich(4));
+
+// Exercício 3
+
+// array de respostas corretas
+// array de respostas recebidas
+// função que filtra os valores que sao iguais entre array 1 e array 2
+// o retorno deve ser a contagem de respostas corretas
+
+const gabarito = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const respostas = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const rightAnswers = (gabarito, respostas) => (
+  respostas.filter((element, index) => element === gabarito[index])
+);
+
+const wrongAnswers = (gabarito, respostas) => (
+  respostas.filter((element, index) => element !== gabarito[index]).filter((element) => element !== 'N.A')
+);
+
+const check = (gabarito, respostas, callback1, callback2) => {
+  const right = callback1(gabarito, respostas).length;
+  const wrong = callback2(gabarito, respostas).length / 2;
+  return `A pontuação final é ${right - wrong}`;
+}
+
+console.log(check(gabarito, respostas, rightAnswers, wrongAnswers));
