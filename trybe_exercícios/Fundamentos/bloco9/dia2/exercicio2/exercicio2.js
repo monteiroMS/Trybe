@@ -1,9 +1,21 @@
 const coinCap = `https://api.coincap.io/v2/assets`;
+const currencyRates = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.min.json`
 
-const addLi = (name, symbol, priceUsd) => {
+const dollarToBRL = async () => {
+  const responseRates = await fetch(currencyRates);
+  const data = await responseRates.json();
+  const { brl } = data.usd;
+  const brlValue = parseFloat(brl.toFixed(2));
+  return brlValue;
+}
+
+const addLi = async (name, symbol, priceUsd) => {
+  priceUsd = parseFloat(parseFloat(priceUsd).toFixed(2));
   const lista = document.getElementById('crypto-list');
   const moeda = document.createElement('li');
-  moeda.innerText = `${name} (${symbol}): $ ${parseFloat(priceUsd).toFixed(2)}`;
+  const real = await dollarToBRL();
+  const conversao = parseFloat((priceUsd * real).toFixed(2));
+  moeda.innerText = `${name} (${symbol}):\n$ ${priceUsd}\nR$ ${conversao}`;
   lista.appendChild(moeda);
 }
 
