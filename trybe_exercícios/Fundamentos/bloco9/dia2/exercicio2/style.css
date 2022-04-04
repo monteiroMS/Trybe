@@ -1,0 +1,7 @@
+#crypto-list {
+  list-style-type: '--> ';
+}
+
+#crypto-list li {
+  height: 70px;
+}
