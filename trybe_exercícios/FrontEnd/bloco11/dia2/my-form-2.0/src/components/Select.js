@@ -3,12 +3,19 @@ import PropTypes from "prop-types";
 
 class Select extends Component {
   render() {
-    const { name, required, states } = this.props;
+    const { name, required, states, onChange } = this.props;
 
     return (
-      <select name={name} required={required}>
-        {states.map((estado) => <option key={estado}>{estado}</option>)}
-      </select>
+      <label htmlFor={name}>{name}
+        <select 
+          id={name}
+          name={name}
+          required={required}
+          onChange={onChange}
+        >
+          {states.map((estado) => <option key={estado}>{estado}</option>)}
+        </select>
+      </label>
     )
   }
 }

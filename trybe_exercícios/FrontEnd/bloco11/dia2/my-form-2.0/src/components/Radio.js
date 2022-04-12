@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 class Radio extends Component {
   render() {
-    const { name, options, required } = this.props;
+    const { name, options, required, onChange } = this.props;
 
     return (
       <label htmlFor={name}>{name}
@@ -14,7 +14,8 @@ class Radio extends Component {
               name={name}
               value={opcao} 
               id={opcao} 
-              required={required} 
+              required={required}
+              onChange={onChange}
             />
           </label>
         ))}

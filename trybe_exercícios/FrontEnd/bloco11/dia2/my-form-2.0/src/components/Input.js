@@ -8,6 +8,7 @@ class Input extends Component {
     return (
       <label htmlFor={name}>{name}
       <input
+        name={name}
         id={name}
         type={type}
         maxLength={maxLength}
@@ -23,7 +24,7 @@ class Input extends Component {
 Input.propTypes = {
   name: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
-  maxLength: PropTypes.number,
+  maxLength: PropTypes.string,
   onChange: PropTypes.func,
   onBlur: PropTypes.func,
   required: PropTypes.bool,
