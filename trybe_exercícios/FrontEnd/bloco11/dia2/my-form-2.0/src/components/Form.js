@@ -29,6 +29,7 @@ class Form extends Component {
     this.state = initialState;
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.clear = this.clear.bind(this);
   }
 
   showsCurriculum(state) {
@@ -75,6 +76,12 @@ class Form extends Component {
     event.preventDefault();
     this.setState({
       submitted: true,
+    })
+  }
+
+  clear() {
+    this.setState({
+      ...initialState,
     })
   }
 
@@ -166,6 +173,7 @@ class Form extends Component {
           </fieldset>
           <Submit name="Criar" />
         </form>
+        <button type="button" onClick={this.clear}>Limpar</button>
         <div>
           {this.showsCurriculum(this.state)}
         </div>
