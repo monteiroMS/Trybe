@@ -1,0 +1,17 @@
+{
+  "name": "io-test",
+  "version": "1.0.0",
+  "description": "exercícios do dia de aprender sobre testes em node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha exercicio1.test.js"
+  },
+  "author": "Matheus Monteiro",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "package.json": "^2.0.1",
+    "sinon": "^14.0.0"
+  }
+}
